@@ -5,6 +5,7 @@ import express from 'express'
 import registerrouter from './routes/auth/register.js'
 import loginrouter from './routes/auth/login.js'
 import projectrouter from './routes/projects/projects.routes.js'
+import taskrouter from './routes/tasks/tasks.routes.js'
 import { ProjectTable } from './controllers/projects/schema.js'
 import { TaskTable } from './controllers/tasks/schema.js'
 const app = express()
@@ -54,5 +55,6 @@ app.use(express.json({
 app.use('/api/v1/auth', registerrouter)
 app.use('/api/v1/auth', loginrouter)
 app.use('/api/v1/project', projectrouter)
+app.use('/api/v1/task', taskrouter)
 
 export default app
