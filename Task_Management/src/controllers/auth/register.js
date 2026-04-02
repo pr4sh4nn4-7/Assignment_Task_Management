@@ -32,7 +32,7 @@ INSERT INTO users(email,password,name) VALUES (${email},${hashpassword},${name})
 RETURNING id,email,name
 `
 
-  console.log(data)
+
   // const token = generateToken(data.id, data.name, data.email)
   res.json({
     message: "Registration successful",

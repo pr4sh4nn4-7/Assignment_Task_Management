@@ -13,5 +13,5 @@ export const ProjectTable = async () => {
         REFERENCES users(id) ON DELETE CASCADE
     )
   `;
-  console.log('project table created');
+  console.log('project successfull')
 };

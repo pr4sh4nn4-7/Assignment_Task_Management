@@ -24,8 +24,12 @@ password VARCHAR(222) NOT NULL
 
 )
 
+
 `
-    console.log(`successfully created`)
+
+
+    console.log('users successfull')
+
 
   } catch (err) {
     console.log(err)
@@ -34,8 +38,10 @@ password VARCHAR(222) NOT NULL
 }
 TableCreation()
 //project creation
-
 ProjectTable()
+
+
+
 
 
 
