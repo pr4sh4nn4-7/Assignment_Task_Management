@@ -6,6 +6,7 @@ import registerrouter from './routes/auth/register.js'
 import loginrouter from './routes/auth/login.js'
 import projectrouter from './routes/projects/projects.routes.js'
 import { ProjectTable } from './controllers/projects/schema.js'
+import { TaskTable } from './controllers/tasks/schema.js'
 const app = express()
 
 
@@ -39,6 +40,8 @@ password VARCHAR(222) NOT NULL
 TableCreation()
 //project creation
 ProjectTable()
+// task table creation
+TaskTable()
 
 
 
